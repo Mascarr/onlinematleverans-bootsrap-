@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="icon" type="image/x-icon" href="apple-touch-icon.png"> 
+
+    <title>GÉCON’I</title>
+    <style>
+        .edit-btn, .save-btn {
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function toggleEditMode(elementId) {
+            var element = document.getElementById(elementId);
+            var readOnly = element.readOnly;
+            element.readOnly = !readOnly;
+            element.focus();
+        }
+
+        function saveChanges() {
+            alert("Changes saved!");
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header-container">
+        <header>
+            <!-- Navigation header -->
+            <div class="navigation">
+                <div class="logo">GÉCON’I</div>
+                <div class="hamburger-icon">☰</div> <!-- Hamburger icon for small screens -->
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="home-link">Home</a></li>
+                        <li><a href="menu.html" class="menu-link">Menu</a></li>
+                        <li><a href="Contactus.html"class="contact-link">Contact Us</a></li>
+                        <li><a href="checkout.html" class="checkout-link">Check out</a></li>
+                    </ul>
+                </nav>
+                <div class="actions">
+                    <div class="search-icon"></div>
+                    <div class="divider"></div>
+                    <div class="book-table"></div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="container">
+        <div class="card cart">
+            <label class="title">CHECKOUT</label>
+            <div class="steps">
+                <div class="step">
+                    <div>
+                        <span>SHIPPING</span>
+                        <input type="text" id="shippingAddress" value="Väderilsgatan 52" readonly>
+                        <input type="text" id="city" value="Göteborg, Sverige" readonly>
+                    </div>
+                    <hr>
+                    <div>
+                        <span>PAYMENT METHOD</span>
+                        <input type="text" id="paymentMethod" value="Mastercard" readonly>
+                        <input type="text" id="cardNumber" value="**** **** **** 4243" readonly>
+                    </div>
+                    <hr>
+                    <div class="promo">
+                        <span>HAVE A PROMO CODE?</span>
+                        <form class="form">
+                            <input type="text" placeholder="Enter a Promo Code" class="input_field">
+                            <button>Apply</button>
+                        </form>
+                    </div>
+                    <hr>
+                    <div class="payments">
+                        <span>PAYMENT</span>
+                        <div class="details">
+                            <span>Subtotal:</span>
+                            <span>$0.00</span>
+                            <span>Shipping:</span>
+                            <span>$4.00</span>
+                            <span>Tax:</span>
+                            <span>$0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button onclick="toggleEditMode('shippingAddress')" class="edit-btn">Edit Shipping Address</button>
+                <button onclick="toggleEditMode('city')" class="edit-btn">Edit City</button>
+                <button onclick="toggleEditMode('paymentMethod')" class="edit-btn">Edit Payment Method</button>
+                <button onclick="toggleEditMode('cardNumber')" class="edit-btn">Edit Card Number</button>
+                <button onclick="saveChanges()" class="save-btn">Save</button>
+            </div>
+        </div>
+
+        <div class="card checkout">
+            <div class="footer">
+                <label class="price">$4.00</label>
+                <button class="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="map-container">
+        <!-- iframe for Google Maps -->
+        <iframe
+            width= 100%
+            height=100%
+            frameborder="0"
+            style="border:0; margin-top: 20px;"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224455.00489782878!2d-74.005972171704!3d40.712776282516866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1639498291503!5m2!1sen!2sus"
+            allowfullscreen
+        ></iframe>
+    </div>
+</body>
+</html>
+</body>
+</html>

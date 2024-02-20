@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;700&display=swap");
+body {
+  font-family: "Cormorant Upright";
+  margin: 0;
+
+    /* Background image that doesn't scroll */
+    background-image: url('flame-border-background-black-realistic-fire-image_53876-146682.avif');
+    background-attachment: fixed;
+    background-size: cover; 
+    background-position: center; 
+}
+
+
+.header-container {
+  background-color: black;
+  color: #fff;
+  padding: 10px 0;
+  position: relative;
+}
+.header-container:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.header-container header .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.header-container header .navigation .logo {
+  margin-left: 60px;
+  font-size: 2em;
+  font-weight: bold;
+}
+.header-container header .navigation .hamburger-icon {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+}
+.header-container header .navigation nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.header-container header .navigation nav ul li {
+  margin-right: 20px;
+}
+.header-container header .navigation nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+.header-container header .navigation nav ul li a.menu-link {
+  color: #ff8c00;
+}
+.header-container header .navigation nav ul li a:hover {
+  color: gray;
+}
+
+.pizza-message {
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 3em;
+    color: #ff8c00;
+    padding: 20px;
+    text-align: left;
+    font-family: 'Inter', sans-serif; /* Apply "Inter" font */
+    position: relative;
+    
+}
+
+.pizza-message p {
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 1.3;
+}
+
+.orange-text {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style for the image container */
+.image-container {
+    display: flex;
+    flex-direction: row-reverse; /* Align images to the right */
+    align-items: flex-start; /* Align images slightly lower than the text */
+    margin-top: -375px;
+    margin-left: 30px;
+    margin-right: 50px; /* space on the right */
+}
+
+/* Style for individual images */
+.image-container img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-left: 20px; /* spacing between images */
+    border: 2px solid #ff8c00; /* Border color */
+    border-radius: 15px; /* Adjusting this value for rounded corners */
+}
+
+/* Style for the "How Does it Work" section */
+.how-it-works {
+    text-align: center;
+    margin-top: 300px;
+    
+}
+
+.how-it-works h2 {
+    font-size: 43px;
+    color: #f17228; 
+}
+
+.icon-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px; 
+}
+.icon-container {
+    text-align: center;
+    margin: 0 80px; 
+}
+.icon-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.icon-container .icon-text {
+    color: #434343; /* Text color */
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px; /* spacing between icon and text */
+}
+.icon-container .icon-description {
+    color: #9e9e9e; /* Text color */
+    font-size: 18px;
+    margin-top: 5px; /* spacing between text and icon */
+}
+.our-menu {
+    text-align: center;
+    margin-top: 80px; /* Adjusting this value for spacing */
+}
+.our-menu h2 {
+    font-size: 43px;
+    color: yellow; /* Strong Yellow color */
+    font-weight: bold;
+}
+.menu-pictures {
+    display: grid;
+    display: flex;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 30px;
+    margin-top: 40px;
+    justify-content: center;   
+}
+  .menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px; /* Adjust the margin as needed */
+}
+.menu-item-content {
+    position: relative;
+    text-align: center;
+}
+.food-name {
+    font-size: 22px;
+    color: #424242;
+    font-weight: bold;
+    margin-top: 10px; /* spacing between image and text */
+    text-align: left;
+    margin-left: 10px;
+}
+.location-text {
+    color: #FFB30E;
+    font-size: 21px;
+    text-align: left;
+    margin-top: -18px; /* spacing between "Cheese Burger" and "Burger Arena" */
+    margin-left: 10px
+}
+.food-price {
+    color: gray;
+    font-size: 22px;
+    text-align: left;
+    margin-top: -10px;
+    margin-left: 10px
+}
+.menu-item img {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid #ff8c00;
+    border-radius: 15px;
+    transition: opacity 0.3s ease, border-bottom 0.3s ease; /* Add opacity transition */
+    position: relative;
+}
+
+.menu-item img:hover {
+    opacity: 0.8; /* Change the opacity on hover */
+    border-bottom: 5px solid #ff8c00; /* Add a line underneath on hover */
+}
+
+.menu-item img::after {
+    content: ''; /* Create an empty content */
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Adjusting the height of the line */
+    background-color: #ff8c00;
+    bottom: -2px; /* Adjusting the distance of the line from the image */
+    left: 0;
+    opacity: 0; /* Initially set the line to be invisible */
+    transition: opacity 0.3s ease; /* Add transition for opacity */
+}
+
+.menu-item:hover img::after {
+    opacity: 1; /* Make the line visible on hover */
+}
+.menu-item-content .add-to-cart-button {
+    background-color: #ff8c00; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 15px 15px; /* Adjusting padding as needed */
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; /* Adjusting margin as needed */
+    text-align: center; /* Align button text to the left */
+    width: 100%; /* Set the button width to 100% */
+    display: block; /* Make the button a block element to occupy the full width */
+}
+
+.menu-item-content .add-to-cart-button:hover {
+    background-color: #e07a00; /* Change background color on hover */
+}
+
+/* Style for flip cards */
+.flip-card {
+    perspective: 1000px; /* Set the perspective for 3D effect */
+    width: 300px; /* Adjusting the width of the flip card */
+    height: 300px; /* Adjusting the height of the flip card */
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+/* Style for the front and back faces of the flip card */
+.flip-card-front,
+.flip-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+/* Style for the front face of the flip card (initial state) */
+.flip-card-front {
+    transform: rotateY(0deg);
+    background-color: #fff; /* Set the background color to white */
+    color: #000; /* Set the text color to black */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px; /* Rounded corners */
+}
+
+/* Style for the back face of the flip card (flipped state) */
+.flip-card-back {
+    transform: rotateY(180deg);
+    background-color: #fff; /* Set the background color to white */
+    color: #000; /* Set the text color to black */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px; /* Rounded corners */
+}
+
+.menu-item.clicked .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+
+/* Add this CSS code at the end of your existing CSS */
+.checkout-button-container {
+    text-align: center;
+    margin-top: 50px; /* Adjusting margin as needed */;
+    background-color: transparent;
+}
+
+.checkout-button {
+    background-color: #4CAF50; /* Green color for the button */
+    color: #fff; /* Text color */
+    padding: 60px 300px; /* Adjusting padding as needed */
+    border: none;
+    border-radius: 40px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 80px;
+    margin-top: 80px;
+    font-weight: bolder;
+}
+
+.checkout-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+
+    
+  
+  

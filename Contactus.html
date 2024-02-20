@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactus.css">
+    <link rel="icon" type="image/x-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-GLhlTQ8i0iQFH1Mz9U8JO1RrNrN7Hpa+TlXGGl5fEAYF5h1A2rCOJELfimB+PQ" crossorigin="anonymous">
+    <title>GÉCON’I - Contact Us</title>
+</head>
+<body>
+    <div class="header-container">
+        <header>
+            <div class="navigation">
+                <div class="logo">GÉCON’I</div>
+                <div class="hamburger-icon">☰</div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="home-link">Home</a></li>
+                        <li><a href="menu.html" class="menu-link">Menu</a></li>
+                        <li><a href="Contactus.html" class="contact-link">Contact Us</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                    </ul>
+                </nav>
+                <div class="actions">
+                    <div class="search-icon"></div>
+                    <div class="divider"></div>
+                    <div class="book-table"></div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="container">
+        <form action="">
+            <input type="text" id="fname" name="firstname" placeholder="Your full name..">
+            <label for="lname">E-mail</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your e-mail..">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+
+        <!-- iframe for Google Maps -->
+        <iframe
+            width="600"
+            height="450"
+            frameborder="0"
+            style="border:0; margin-top: 20px;"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224455.00489782878!2d-74.005972171704!3d40.712776282516866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1639498291503!5m2!1sen!2sus"
+            allowfullscreen
+        ></iframe>
+    </div>
+</body>
+</html>

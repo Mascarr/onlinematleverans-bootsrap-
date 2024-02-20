@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+    <link rel="stylesheet" href="index.css"> 
+    <link rel="icon" type="image/x-icon" href="apple-touch-icon.png"> 
+    <title>GÉCON’I</title>
+</head>
+<body>
+    <div class="header-container">
+        <header>
+            <!-- Navigation header -->
+            <div class="navigation">
+                <div class="logo">GÉCON’I</div>
+                <div class="hamburger-icon">☰</div> <!-- Hamburger icon for small screens -->
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="home-link">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="Contactus.html">Contact Us</a></li>
+                        <li><a href="checkout.html">Check out</a></li>
+                    </ul>
+                </nav>
+                <div class="actions">
+                    <div class="search-icon"></div>
+                    <div class="divider"></div>
+                    <div class="book-table"></div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="content-container">
+        <div class="new-flavour-section">
+            <p class="small-text">Chase the new Flavour</p>
+            <p class="big-text">The key To Fine Dining</p>
+            <p class="description">
+                Sit tellus lobortis sed senectus vivamus molestie.
+                Condimentum volutpat morbi facilisis quam scelerisque sapien.
+                Et, penatibus aliquam amet tellus
+                We are the best offering the absolute best
+            </p>
+            <button class="explore-btn">EXPLORE MORE</button>
+        </div>
+    </div>
+
+    <div class="carousel-section">
+        <div class="carousel">
+            
+            <div id="image1">
+                <img src="tasty-burger-isolated-white-background-fresh-hamburger-fastfood-with-beef-cheese_90220-1063.avif" alt="Image 1">
+                <div class="image-description">
+                    <p class="white-font">Cheese Burger</p>
+                    <p class="dark-yellow-font">Hisingen</p>
+                    <button class="order-now-btn">ORDER NOW</button>
+                </div>
+            </div>
+            <div id="image2">
+                <img src="tasty-burger-isolated-white-background-fresh-hamburger-fastfood-with-beef-cheese_90220-1063.avif" alt="Image 2">
+                <div class="image-description">
+                    <p class="white-font">Cheese Burger</p>
+                    <p class="dark-yellow-font">Hisingen</p>
+                    <button class="order-now-btn">ORDER NOW</button>
+                </div>
+            </div>
+            <div id="image3">
+                <img src="tasty-burger-isolated-white-background-fresh-hamburger-fastfood-with-beef-cheese_90220-1063.avif" alt="Image 3">
+                <div class="image-description">
+                    <p class="white-font">Cheese Burger</p>
+                    <p class="dark-yellow-font">Hisingen</p>
+                    <button class="order-now-btn">ORDER NOW</button>
+                </div>
+            </div>
+            <div id="image4">
+                <img src="tasty-burger-isolated-white-background-fresh-hamburger-fastfood-with-beef-cheese_90220-1063.avif" alt="Image 4">
+                <div class="image-description">
+                    <p class="white-font">Cheese Burger</p>
+                    <p class="dark-yellow-font">Hisingen</p>
+                    <button class="order-now-btn">ORDER NOW</button>
+                </div>
+            </div>
+            <div id="image5">
+                <img src="tasty-burger-isolated-white-background-fresh-hamburger-fastfood-with-beef-cheese_90220-1063.avif" alt="Image 5">
+                <div class="image-description">
+                    <p class="white-font">Cheese Burger</p>
+                    <p class="dark-yellow-font">Hisingen</p>
+                    <button class="order-now-btn">ORDER NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="info-section">
+        <div class="info-box left-box">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
+        </div>
+        <div class="info-box right-box">
+            <h2>Our History</h2>
+            <p>Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</p>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Footer content goes here... -->
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                arrows: true,
+                dots: false,
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 1
+            });
+        });
+
+            $(document).ready(function () {
+        $('.hamburger-icon').click(function () {
+            $('.navigation nav ul').slideToggle(); // Toggle the display of navigation links
+        });
+
+        $(window).resize(function () {
+            if ($(window).width() > 768) {
+                $('.navigation nav ul').css('display', 'flex'); // Ensure navigation links are visible for larger screens
+            } else {
+                $('.navigation nav ul').css('display', 'none'); // Hide navigation links by default for smaller screens
+            }
+        });
+    });
+
+        // Toggle navigation for small screens
+        $('.hamburger-icon').click(function () {
+            $('.navigation nav ul').slideToggle();
+        });
+
+        // Adjust navigation display on window resize
+        $(window).resize(function () {
+            if ($(window).width() > 768) {
+                $('.navigation nav ul').css('display', 'flex');
+            } else {
+                $('.navigation nav ul').css('display', 'none');
+            }
+        });
+        // Handle button click to redirect to menu.html
+        $('.order-now-btn').click(function () {
+            window.location.href = 'menu.html';
+        });
+    
+</script>
+        
+</body>
+</html>

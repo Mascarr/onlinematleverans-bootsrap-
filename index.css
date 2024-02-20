@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;700&display=swap");
+body {
+  background-color: black;
+  font-family: "Cormorant Upright";
+  margin: 0;
+}
+
+.header-container {
+  background-color: black;
+  color: #fff;
+  padding: 10px 0;
+  position: relative;
+}
+.header-container:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.header-container header .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.header-container header .navigation .logo {
+  margin-left: 60px;
+  font-size: 2em;
+  font-weight: bold;
+}
+.header-container header .navigation .hamburger-icon {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+}
+.header-container header .navigation nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.header-container header .navigation nav ul li {
+  margin-right: 20px;
+}
+.header-container header .navigation nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+.header-container header .navigation nav ul li a.home-link {
+  color: #ff8c00;
+}
+.header-container header .navigation nav ul li a:hover {
+  color: gray;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-container header .navigation .hamburger-icon {
+    display: block;
+  }
+  .header-container header .navigation nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: black;
+  }
+  .header-container header .navigation nav ul.active {
+    display: flex;
+  }
+  .header-container header .navigation nav ul li {
+    margin: 10px;
+  }
+  .header-container header .navigation nav ul li a {
+    font-size: 1.2em;
+  }
+}
+.content-container {
+  margin-left: 140px;
+}
+
+.new-flavour-section {
+  color: white;
+  margin-top: 10vw;
+  max-width: 50%;
+}
+.new-flavour-section .small-text {
+  font-size: 1.4em;
+}
+.new-flavour-section .big-text {
+  margin-top: -10px;
+  font-size: 8vw;
+  font-family: "Cormorant Upright" "Times New Roman";
+  font-weight: 600;
+  color: #dcca87;
+  margin-bottom: 10px;
+}
+.new-flavour-section .description {
+  opacity: 80%;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+.new-flavour-section .explore-btn {
+  background-color: #ffcc00;
+  color: black;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.new-flavour-section .explore-btn:hover {
+  background-color: #fff200;
+}
+@media only screen and (max-width: 768px) {
+  .new-flavour-section .big-text {
+    font-size: 12vw;
+  }
+  .new-flavour-section .description {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+  .new-flavour-section .explore-btn {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+}
+
+.carousel-section {
+  margin-top: 150px;
+  text-align: center;
+}
+.carousel-section .carousel {
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.carousel-section .carousel img {
+  width: 80%;
+  margin: 0px 10px;
+}
+.carousel-section .slick-prev,
+.carousel-section .slick-next {
+  font-size: 100px;
+  color: white;
+}
+.carousel-section .image-description {
+  opacity: 70%;
+  color: white;
+  margin-top: 0px;
+}
+.carousel-section .image-description .white-font {
+  font-size: 1.7em;
+}
+.carousel-section .image-description .dark-yellow-font {
+  margin-top: -14px;
+  color: orange;
+  font-size: 1.6em;
+}
+.carousel-section .image-description .order-now-btn {
+  background-color: #ffcc00;
+  color: black;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.carousel-section .image-description .order-now-btn:hover {
+  background-color: #fff200;
+}
+@media only screen and (max-width: 768px) {
+  .carousel-section .image-description .white-font {
+    font-size: 1.4em;
+  }
+  .carousel-section .image-description .dark-yellow-font {
+    font-size: 1.3em;
+  }
+  .carousel-section .image-description .order-now-btn {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+}
+
+.info-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.info-section .info-box {
+  margin-top: 30px;
+  background-color: black;
+  color: white;
+  padding: 100px;
+  max-width: 1000px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.info-section .info-box h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.info-section .info-box p {
+  font-size: 30px;
+  opacity: 0.8;
+}
+.info-section .left-box {
+  text-align: right;
+  align-items: flex-end;
+  margin-right: 10px;
+}
+.info-section .right-box {
+  text-align: left;
+  align-items: flex-start;
+  margin-left: 0px;
+}
+@media only screen and (max-width: 768px) {
+  .info-section .info-box {
+    padding: 30px;
+  }
+  .info-section .info-box h2 {
+    font-size: 30px;
+  }
+  .info-section .info-box p {
+    font-size: 1em;
+  }
+}
+
+/* Animation added to new-flavour-section */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.new-flavour-section {
+  animation: fadeInUp 1s ease-out;
+}

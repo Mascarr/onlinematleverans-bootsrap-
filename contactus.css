@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;700&display=swap");
+body {
+  background-color: black;
+  font-family: "Cormorant Upright";
+  margin: 0;
+}
+
+.header-container {
+  background-color: black;
+  color: #fff;
+  padding: 10px 0;
+  position: relative;
+}
+.header-container:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.header-container header .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.header-container header .navigation .logo {
+  margin-left: 60px;
+  font-size: 2em;
+  font-weight: bold;
+}
+.header-container header .navigation .hamburger-icon {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+}
+.header-container header .navigation nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.header-container header .navigation nav ul li {
+  margin-right: 20px;
+}
+.header-container header .navigation nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+.header-container header .navigation nav ul li a.contact-link {
+  color: #ff8c00;
+}
+.header-container header .navigation nav ul li a:hover {
+  color: gray;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none; 
+    color: #fff;
+    margin: 0 15px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color:gray;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
